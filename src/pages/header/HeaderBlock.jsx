@@ -3,7 +3,7 @@ import styles from './HeaderBlock.module.scss';
 function HeaderBlock() {
     return (
       <div className={styles.Background}>
-          aaaaa
+          ANTON IDI NAHUi
       </div>
     );
   }
