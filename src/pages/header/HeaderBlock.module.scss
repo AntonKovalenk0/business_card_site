@@ -1,7 +1,7 @@
 .Background {
-    width: 100%;
+    width: 100vw;
     height: 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
 }
@@ -16,6 +16,7 @@
     .Logo {
         width: 20%;
         height: 100%;
+        font-weight: 600;
 
         a{
             height: 100%;
@@ -27,13 +28,11 @@
 
     .Logo span:nth-child(odd) {
         font-size: 20px;
-        font-weight: 600;
         color: rgb(255, 255, 255);
     }
 
     .Logo span:nth-child(even) {
         font-size: 16px;
-        font-weight: 600;
         color: rgb(131, 131, 131);
     }
 
