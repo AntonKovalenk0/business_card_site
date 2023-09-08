@@ -18,23 +18,23 @@
     }
 }
 
-// .Button__isLink,
-// .Button__isLink:hover {
-//     text-decoration: none;
-// }
+.Button__isLink,
+.Button__isLink:hover {
+    text-decoration: none;
+}
 
-// .Button__isLarge {
-//     font-size: 20px;
-//     font-weight: 300;
-//     box-shadow: -2px 1px 12px 2px #dbdbdbb3;
-//     background-color: #ffffff;
-//     padding: 15px 30px;
+.Button__isLarge {
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: -2px 1px 12px 2px #dbdbdbb3;
+    background-color: #ffffff;
+    padding: 15px 30px;
 
-//     &:hover {
-//         transform: translateY(-2px);
-//         box-shadow: -3px 2px 15px 6px #dbdbdb99;
-//     }
-// }
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: -3px 2px 15px 6px #dbdbdb99;
+    }
+}
 
 // .Button__isGreen {
 //     padding: 15px 30px;
