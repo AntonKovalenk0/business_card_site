@@ -1,7 +1,19 @@
+import { useState } from 'react';
 import Button from '../../UI/button/Button';
 import styles from './HeaderBlock.module.scss';
 
 function HeaderBlock() {
+
+  // eslint-disable-next-line no-unused-vars
+  const [language, setLanguage] = useState('UA');
+
+  const toggleLanguage = () => {
+    if (language === 'UA') {
+      setLanguage('EN');
+    } else {
+      setLanguage('UA');
+    }
+  };
 
   const buttonsConfig = [
     {
@@ -42,7 +54,7 @@ function HeaderBlock() {
               ))}
             </div>
             <div className={styles.LanguageBlock}>
-
+              <Button type="button" name={language} onClick={toggleLanguage} />
             </div>
           </div>
       </div>
