@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import classNames from 'classnames';
 import styles from './Button.module.scss';
 
@@ -11,7 +12,7 @@ function Button({
   const buttonClassName = classNames(styles.Button, {
     [styles.Button__isLarge]: type === 'large',
     [styles.Button__isLink]: type === 'link',
-    [styles.Button__isGreen]: type === 'green',
+    // [styles.Button__isGreen]: type === 'green',
   });
 
   let ButtonTag = 'button';
