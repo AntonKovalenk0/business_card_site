@@ -1,86 +1,134 @@
 .Background {
     width: 1024px;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-}
-
-.FixationBlock {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: center;
-    width: 80%;
+
+    @media (max-width: 768px) {
+        width: 600px;
+    }
+
+    @media (max-width: 640px) {
+        width: 400px;
+        flex-direction: column-reverse;
+    }
+
+    @media (max-width: 320px) {
+        width: 300px;
+    }
 
     .NameContent {
         width: 40%;
         height: 100%;
         font-weight: 600;
 
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+
         .Name {
             height: 60%;
+            width: 100%;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            
 
             .FirstName {
-                height: 20%;
+                height: 100px;
                 position: relative;
-                
-            }
-                .FirstName span {
-                    position: absolute;
-                    font-size: 5em;
-                    width: 100%;
-                    height: 100%;
-                    padding-left: 0;
+
+                @media (max-width: 768px) {
+                    height: 60px;
                 }
-            
-                .FirstName span:nth-child(even) {
+
+                @media (max-width: 640px) {
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                @media (max-width: 320px) {
+                    height: 20px;
+                }
+
+                span {
+                    position: absolute;
                     font-size: 60px;
-                    
+
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                    }
+
+                    @media (max-width: 640px) {
+                        font-size: 30px;
+
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: 20px;
+                    }
+                }
+
+                span:nth-child(even) {
                     color: transparent;
                     -webkit-text-stroke: 2px  rgb(0, 0, 0);
+
+                    @media (max-width: 320px) {
+                        --webkit-text-stroke: none;
+                    }
                 }
-    
-                .FirstName span:nth-child(odd) {
-                    font-size: 60px;
-                    
+
+                span:nth-child(odd) {
                     color: rgb(0, 0, 0);
                     animation: animate 5s ease-in-out infinite;
+
+                    @media (max-width: 320px) {
+                        animation: none;
+                    }
+                }
+            }
+
+            .LastName {
+                padding-left: 2px;
+                font-size: 30px;
+                color:  rgb(131, 131, 131);
+
+                @media (max-width: 768px) {
+                    font-size: 25px;
                 }
 
-        }
+                @media (max-width: 640px) {
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
 
-        .LastName {
-            height: 10%;
-            font-size: 30px;
-            color:  rgb(131, 131, 131);
-        }
-
-        .Buttons {
-            height: 40%;
+                @media (max-width: 320px) {
+                    font-size: 15px;
+                    padding-left: 0;
+                }
+            }
         }
 
     }
-
-
-
-
-
 
     .Logo {
         width: 60%;
         height: 100%;
+
+        @media (max-width: 640px) {
+            width: 100%;
+        }
     }
 }
 
-  
-@keyframes animate 
+
+@keyframes animate
 {
-  0%, 100% 
+  0%, 100%
   {
     clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%)
   }
